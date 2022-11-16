@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favcon.png">
+	<link rel="stylesheet" href="style.css">
+
+	<title>STUDENT REGISTRATION </title>
+</head>
+<body>
+	<div class="container" >
+		<div class="header"> </div>
+		<h2 class="upper">GENERATE QR CODE</h2>
+		<div class="input-form">
+		
+		<input type="text" class="studentNo." placeholder="SN NO. 00-00000" >
+		<br>
+
+		<button class="generate-btn">GENERATE QR</button>
+		<div class="qr-code">
+			<img src="qrimage.jpg" class="qr-image" >
+	</div>
+	<script>
+	
+		var container = document.querySelector(".container");
+		var generateBtn = document.querySelector(".generate-btn");
+		var qrInput = document.querySelector(".qr-studnum");
+		var qrImg = document.querySelector(".qr-image");
+
+			generateBtn.onclick = function(){
+				container.classlist.add("active");
+			}
+		
+	</script>
+</body>
+</html>
